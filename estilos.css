@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&display=swap');
+
 html {
   font-size: 16px;
 }
@@ -7,6 +10,7 @@ body {
   font-size: 0.85rem;
   color: #333;
   background-color: #eee;
+  font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -14,7 +18,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 h1 {
@@ -84,7 +88,8 @@ header #navbar ul li {
   display: inline;
   margin: 0 25px;
   color: #025157;
-  
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 20px;  
 }
 header #actions {
   width: 15%;
