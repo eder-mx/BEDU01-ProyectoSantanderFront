@@ -75,7 +75,7 @@ header #logo img {
 }
 header #navbar {
   width: 70%;
-  text-align: center;
+  text-align: left;
   color: blue;
   font-weight: 500;
 }
