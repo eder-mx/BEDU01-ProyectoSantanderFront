@@ -75,18 +75,36 @@ header #logo img {
 }
 header #navbar {
   width: 70%;
+  font-family:  Verdana, sans-serif;
   text-align: left;
-  color: blue;
   font-weight: 500;
+  height: 45px;
 }
 header #navbar ul li {
   display: inline;
+  margin: 0 25px;
+  color: #025157;
+  
 }
 header #actions {
   width: 15%;
   text-align: right;
   font-size: 14px;
   font-weight: 700;
+}
+header #actions > * {
+  margin: 10px;
+}
+
+header #actions > a{
+  color: #67b54b;
+} 
+header #actions > button{
+  color: white;
+  background-color: #67b54b;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 5px;
 }
 
 .main{
