@@ -8,8 +8,8 @@ html {
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 0.85rem;
-  color: #333;
-  background-color: #eee;
+  color: #eee;
+  background-color: #333;
   font-family: 'Lato', sans-serif;
 }
 
@@ -23,7 +23,7 @@ h5 {
 
 h1 {
   font-size: 1.75rem;
-  color: darkblue;
+  color: skyblue;
   margin-bottom: 0;
 }
 
@@ -34,9 +34,9 @@ h2 {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: blue;
+  background-color: skyblue;
   border: none;
-  color: white;
+  color: darkblue;
   padding: 10px 200px;
   text-decoration: none;
   margin: 4px 2px;
@@ -87,7 +87,7 @@ header #navbar {
 header #navbar ul li {
   display: inline;
   margin: 0 25px;
-  color: #025157;
+  color: yellowgreen;
   font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 20px;  
 }
@@ -102,11 +102,11 @@ header #actions > * {
 }
 
 header #actions > a{
-  color: #67b54b;
+  color: yellowgreen;
 } 
 header #actions > button{
-  color: white;
-  background-color: #67b54b;
+  color: #333;
+  background-color: yellowgreen;
   padding: 12px 14px;
   border: 0;
   border-radius: 5px;
