@@ -7,106 +7,317 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eder´s Blog</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="estilos.css" />
 
 </head>
 
 <body>
-  <section class="fixed-header">
-    <header>
-      <a id="logo" href="">
-        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="" />
-      </a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="img/eder-logo.png" alt="Logotipo EDER" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
 
-      <nav id="navbar">
-        <ul>
-          <li>Platform</li>
-          <li>Pricing</li>
-          <li>Customers</li>
-          <li>Resources</li>
-          <li>About</li>
-        </ul>
-      </nav>
-
-      <div id="actions">
-        <a id="logo" href="">Sign In</a>
-        <button>Start free trial</button>
+          <div class="actions">
+            <a role="button" class="btn btn-outline-primary" href="#">Sign In</a>
+            <button type="button" class="btn btn-primary">Start Free Trial</button>
+          </div>
+        </div>
       </div>
-    </header>
-  </section>
+    </nav>
+  </header>
 
   <section class="main">
+    <div class="container-fluid my-4">
 
-    <img src="https://eder.mx/img/logo.png" width="180" alt="Logotipo Eder" />
+      <img src="https://eder.mx/img/logo.png" width="180" alt="Logotipo Eder" />
 
-    <h1>Eder's Blog</h1>
-    <em>Diseñador Web / Front End Designer</em>
-    <p><strong> Tengo más de 10 años buscando el equilibrio entre el desarrollo de sistemas y el diseño
-        gráfico.</strong>
-    </p>
-    <p>Mi experiencia en el desarrollo de sistemas, interfaces web y desarrollo gráfico de marcas me ha permitido
-      desarrollar desde publicidad a empresas locales hasta sistemas para empresas internacionales.</p>
+      <h1>Eder's Blog</h1>
+      <em>Diseñador Web / Front End Designer</em>
+      <p><strong> Tengo más de 10 años buscando el equilibrio entre el desarrollo de sistemas y el diseño
+          gráfico.</strong>
+      </p>
+      <p>Mi experiencia en el desarrollo de sistemas, interfaces web y desarrollo gráfico de marcas me ha permitido
+        desarrollar desde publicidad a empresas locales hasta sistemas para empresas internacionales.</p>
 
-    <hr>
-    <h2>Ponte en contacto</h2>
-    <strong>Dejame tus datos de contacto y me pondre en contacto contigo</strong><br><br>
+      <hr>
+      <h2>Ponte en contacto</h2>
+      <strong>Dejame tus datos de contacto y me pondre en contacto contigo</strong><br><br>
 
-    <form>
-      <label for="name">Nombre:</label>
-      <input type="text" name="name" value="nombre" />
-      <br><br>
-      <label for="pass">Correo:</label>
-      <input type="email" name="pass" value="correo" />
-      <br><br>
-      <label for="edad">Edad:</label>
-      <input type="number" name="edad" />
-      <br>
-      <br>
-      <input type="checkbox" name="curso" value="curso"><label for="curso">Eres del Curso de BEDU Santander</label>
-
-      <br>
-      <br>
-      <input type="button" value="Enviar">
-    </form>
-  </section>
-
-  <section class="promo">
-    <article class="explanatory-video">
-      <video controls
-        poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
-        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"></video>
-      <source type="video/webm"
-        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" />
-      <source type="video/mp4"
-        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
-      </video>
-      <img
-        src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
-        alt="See how it works" />
-    </article>
-    <article class="publish">
-      <h3>Publish to your blog in minutes, not hours.</h3>
-      <p>
-        Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours
-        to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+
-        professionally written articles and build your email list faster with our powerful conversion tool.</p>
       <form>
-        <p>Start publishing today:</p>
-        <div>
-          <input type="text" placeholder="Enter email" />
-          <button>Start My Trial</button>
-        </div>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" value="nombre" />
+        <br><br>
+        <label for="pass">Correo:</label>
+        <input type="email" name="pass" value="correo" />
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" />
+        <br>
+        <br>
+        <input type="checkbox" name="curso" value="curso"><label for="curso">Eres del Curso de BEDU Santander</label>
+
+        <br>
+        <br>
+        <input type="button" value="Enviar">
       </form>
+    </div>
+  </section>
+
+  <section class="promo bg-primary">
+    <div class="container-fluid my-4 py-5">
+      <div class="row d-flex justify-content-center">
+        <article class="col-4 explanatory-video text-center d-flex flex-column">
+          <video controls
+            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
+            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"></video>
+          <source type="video/webm"
+            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm" />
+          <source type="video/mp4"
+            src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" />
+          </video>
+          <img
+            src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+            alt="See how it works" />
+        </article>
+        <article class="col-4 publish">
+          <h3>Publish to your blog in minutes, not hours.</h3>
+          <p>
+            Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have
+            hours
+            to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+
+            professionally written articles and build your email list faster with our powerful conversion tool.</p>
+          <form class="row g-3 align-items-center">
+            <div class="col-auto">
+              <p class="pt-2">Start publishing today:</p>
+            </div>
+            <div class="col-auto">
+              <input type="email" id="email" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <button type="button" class="btn btn-light">Start My Trial</button>
+            </div>
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid my-3 py-5">
+      <iframe id="videoB" width="560" height="315" src="https://www.youtube.com/embed/Xsrjc5h3QR4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="features">
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="img/icono-1.png" alt="Icono 1" />
+        </figure>
+        <h3>Fill your blog with engaging articles.</h3>
+        <p>
+          Publish to your blog in less time than it takes to drink your
+          morning coffee.
+        </p>
+        <a href="">Publish instantly →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img src="img/concepto-1.jpg" alt="Imagen 1" />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="img/icono-2.png" alt="Icono 2" />
+        </figure>
+        <h3>Attract and engage more website visitors.</h3>
+        <p>
+          Enhance your email, social media channels, and paid ads with content
+          from Matcha.
+        </p>
+        <a href="">Get more site traffic →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img src="img/concepto-2.jpg" alt="Imagen 2" />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="img/icono-3.png" alt="Icono 3" />
+        </figure>
+        <h3>Capture more emails with locked content.</h3>
+        <p>
+          Convert 10x more of your traffic into subscribers and nurture them
+          to a sale.
+        </p>
+        <a href="">Grow your email list faster →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img src="img/concepto-3.jpg" alt="Imagen 3" />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img src="img/icono-4.png" alt="Icono 4" />
+        </figure>
+        <h3>Optimize your blog’s performance.</h3>
+        <p>
+          See what content delivers the most traffic, engagement, email
+          subscribers, and sales.
+        </p>
+        <a href="">See content’s ROI →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img src="img/concepto-4.jpg" alt="Imagen 4" />
+        </figure>
+      </div>
     </article>
   </section>
 
-  <br />
-  <br />
-  <br />
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Xsrjc5h3QR4" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
+  <section class="success-stories">
+    <div class="container-fluid row my-4">
+    <article class="overview col-7">
+      <h2>Growing ecommerce brands rely on Matcha.</h2>
+      <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.</p>
+      <button class="btn btn-primary mb-3">Who Uses Matcha? </button>
+      <figure>
+        <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
+      </figure>
+    </article>
+    <article class="stories-carousel col-4">
+      <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner" style="padding-bottom: 45px;">
+          <div class="carousel-item active">
+            <!-- Tarjeta 1: Everly -->
+            <div class="card">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                class="card-img-top" alt="Everly">
+              <div class="card-body">
+                <div class="card-circle everly">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                    alt="Everly">
+                </div>
+                <h4>Everly</h4>
+                <h3>
+                  Early-Stage CPG Brand Increases Lead Conversion 20x,
+                  Ecommerce Revenue 20%
+                </h3>
+                <div class="results">
+                  <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
+                  <p>22% of monthly revenue influenced by content</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary mb-2 w-100">See Case Study</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Tarjeta 2: Sea to Summit -->
+          <div class="carousel-item">
+            <div class="card">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" class="card-img-top" alt="Everly">
+              <div class="card-body">
+                <div class="card-circle summit">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="Summit">
+                </div>
+                <h4>Sea to Summit</h4>
+                <h3>
+                  Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New
+                  Subscribers 820%
+                </h3>
+                <div class="results">
+                  <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
+                  <p>+327% more popup conversions at a 60% lower cost</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary mb-2 w-100">See Case Study</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Tarjeta 3: Mambe -->
+          <div class="carousel-item">
+            <div class="card">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+                class="card-img-top" alt="Everly">
+              <div class="card-body">
+                <div class="card-circle mambe">
+                  <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png" alt="Mambe">
+                </div>
+                <h4>Mambe Waterproof Blankets</h4>
+                <h3>
+                  How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                </h3>
+                <div class="results">
+                  <img src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png" alt="Cart icon">
+                  <p>+327% more popup conversions at a 60% lower cost</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary mb-2 w-100">See Case Study</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="carousel-indicators selectores">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </article>
+    </div>
+  </section>
 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
 </body>
 

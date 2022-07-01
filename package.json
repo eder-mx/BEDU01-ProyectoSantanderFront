@@ -1,0 +1,22 @@
+{
+  "name": "01-proyectosantanderfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eder-mx/BEDU01-ProyectoSantanderFront.git"
+  },
+  "author": "Eder Bermudez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eder-mx/BEDU01-ProyectoSantanderFront/issues"
+  },
+  "homepage": "https://github.com/eder-mx/BEDU01-ProyectoSantanderFront#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:wght@300;400;700&display=swap");
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 0.85rem;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   color: #333;
   background-color: #eee;
-  font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -18,15 +17,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
-
 h1 {
-  font-size: 1.75rem;
+  font-size: 3.75rem;
   color: darkblue;
   margin-bottom: 0;
 }
-
 h2 {
   text-transform: uppercase;
 }
@@ -58,100 +55,370 @@ input + label {
   width: auto;
 }
 
-header {
-  margin: 40px 20px 0;
-  font-size: 0;
+header nav {
+  height: 90px;
+  align-items: baseline !important;
+  padding-top: 0 !important;
 }
-header > * {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 45px;
-  height: 100%;
-  vertical-align: middle;
+header nav > div {
+  background: #383838 url("img/bg_left.png") top left repeat;
 }
-header #logo {
-  width: 15%;
-  height: auto;
+header nav .logo img {
+  height: 70px !important;
+  width: auto;
 }
-header #logo img {
-  max-width: 80px;
-  height: auto;
+header nav .navbar-nav .nav-item {
+  padding: 0 6px;
 }
-header #navbar {
-  width: 70%;
-  font-family:  Verdana, sans-serif;
-  text-align: left;
+header nav .navbar-nav .nav-item .nav-link {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
-  height: 45px;
+  padding: 38px 10px 26px;
 }
-header #navbar ul li {
-  display: inline;
-  margin: 0 25px;
-  color: #025157;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  font-size: 20px;  
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffcc00;
+  border-bottom: 4px solid #ffcc00;
 }
-header #actions {
-  width: 15%;
-  text-align: right;
-  font-size: 14px;
-  font-weight: 700;
-}
-header #actions > * {
-  margin: 10px;
+header nav .navbar-nav .nav-item .nav-link.active {
+  color: #bbff00;
+  border-bottom: 4px solid #bbff00;
 }
 
-header #actions > a{
-  color: #67b54b;
-} 
-header #actions > button{
-  color: white;
-  background-color: #67b54b;
-  padding: 12px 14px;
-  border: 0;
-  border-radius: 5px;
+header nav .btn-outline-primary {
+  color: #0099ff;
+  border-color: #0099ff;
+}
+header nav .btn-primary {
+  background-color: #0099ff;
 }
 
-.fixed-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fffbf7; }
-
-.main{
-  margin-top: 200px;
+.main {
+  margin-top: 100px;
   text-align: center;
 }
 
-
-.promo {
+.promo .explanatory-video img {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+}
+.promo .publish {
+  align-self: flex-start !important;
+}
+.promo .publish h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 3rem;
+  color: white;
+}
+.promo .publish > p {
+  font-size: 1rem;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 1.25em;
+}
+.promo .publish > form {
   display: flex;
-  column-gap: 2rem;
-  width: 70%;
-  margin: 100px auto;
-  align-items: center; }
-  .promo .explanatory-video {
-    display: flex;
+}
+.promo .publish > form p {
+  color: white;
+  margin-right: 1.125rem;
+}
+#videoB {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.features {
+  background-color: #025157;
+  padding: 60px 80px 30px;
+  display: grid;
+  grid-template: repeat(2, 350px) / repeat(2, 1fr);
+}
+.features .feature-card {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.features .feature-card .feature-content {
+  padding: 30px 20px 40px 40px;
+  flex: 2;
+}
+
+.features .feature-card .feature-content > * {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.features .feature-card .feature-content img {
+  width: 50px;
+}
+
+.features .feature-card .feature-content h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+
+.features .feature-card .feature-content p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.features .feature-card .feature-content a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.features .feature-card .feature-image {
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 80%;
+}
+
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+  margin-top: 0;
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  #navbar,
+  #actions {
+    display: none;
+  }
+
+  .main {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+  .publish > h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    text-align: center;
+  }
+  .publish > form {
     flex-direction: column;
-    align-items: center; }
-    .promo .explanatory-video img {
-      width: 120px;
-      margin-top: 10px; }
-  .promo .publish { 
-    align-self: flex-start!important; }
-    .promo .publish h3 {
-      font-size: 2.5rem;
-      margin: 0;
-      line-height: 3.0rem;
-      color: darkslateblue; }
-    .promo .publish > p {
-      font-size: 1rem;
-      color: #343434;
-      line-height: 1.5;
-      margin-bottom: 1.25em; }
-    .promo .publish > form {
-      display: flex; }
-      .promo .publish > form p {
-        color: #025157;
-        margin-right: 1.125rem; }
+  }
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .promo > explanatory-video > video {
+    width: 100%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .features .feature-card {
+    text-align: center;
+  }
+  .features .feature-card .feature-content {
+    padding: 20px;
+  }
+  .features .feature-card .feature-image {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+.success-stories {
+  background: white url("img/fondo.png") top left repeat;
+  opacity: 0.90;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.success-stories > div {
+  opacity: 1;
+}
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+  font-family: "Alegreya", serif;
+  font-size: 3.0rem;
+  line-height: 3.75rem;
+  color: #84ceff;
+  
+}
+
+.success-stories .overview p {
+  color: white;
+  text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+  filter: invert(70%) sepia(68%) saturate(549%) hue-rotate(177deg) brightness(101%) contrast(105%) !important;
+}
+
+/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+  max-width: 370px;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+/* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+.success-stories .card .card-body {
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+  padding: 40px 1rem 1rem;
+}
+
+/* Estos son los estilos para textos y acomodo de elementos */
+.success-stories .card .card-body h4 {
+  color: #073d8c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+  font-family: "Slabo 27px", serif;
+}
+
+.success-stories .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success-stories .card .card-body .results {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.success-stories .card .card-body .results img {
+  width: 26px;
+  margin-right: 20px;
+}
+
+.success-stories .card .card-body .results p {
+  margin: 0;
+}
+
+
+
+.success-stories .card .card-footer {
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+}
+
+/* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+.success-stories .card .card-body .card-circle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top:-45px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+.success-stories .card .card-body .card-circle.everly {
+  background-color: #f9da73;
+  border: 5px solid #f9da73;
+}
+
+/* Los círculos deben recibir la imagen y ajustarla al tamaño */
+.success-stories .card .card-body .card-circle.everly img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.success-stories .card .card-body .card-circle.everly {
+  background-color: #f9da73;
+  border: 5px solid #f9da73;
+}
+
+.success-stories .card .card-body .card-circle.summit {
+  background-color: #81d742;
+  border: 5px solid #81d742;
+}
+
+.success-stories .card .card-body .card-circle.mambe {
+  background-color: #ef7179;
+  border: 5px solid #ef7179;
+}
+
+.success-stories .card .card-body .card-circle.everly img,
+.success-stories .card .card-body .card-circle.summit img,
+.success-stories .card .card-body .card-circle.mambe img {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .success-stories {
+    flex-direction: column;
+    padding: 5% 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .success-stories {
+    flex-direction: column;
+}
